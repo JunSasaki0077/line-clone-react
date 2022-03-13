@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { db } from "../firebase.js";
+import SendMessage from "./SendMessage.js";
 import SignOut from "./SignOut";
 
 function Line() {
@@ -26,6 +27,7 @@ function Line() {
           </div>
         ))}
       </div>
+      <SendMessage />
     </div>
   );
 }
